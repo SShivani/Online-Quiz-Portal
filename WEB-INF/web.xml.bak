@@ -1,0 +1,47 @@
+<web-app>
+	<servlet>
+		<servlet-name>instruction</servlet-name>
+		<servlet-class>InstructionServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>instruction</servlet-name>
+		<url-pattern>/instruct.com</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>register1</servlet-name>
+		<servlet-class>RegisterInstructionServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>register1</servlet-name>
+		<url-pattern>/register.com</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>first</servlet-name>
+		<servlet-class>QuizServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>first</servlet-name>
+		<url-pattern>/quiz.com</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>second1</servlet-name>
+		<servlet-class>SecondServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>second1</servlet-name>
+		<url-pattern>/second.com</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>result</servlet-name>
+		<servlet-class>ResultServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>result</servlet-name>
+		<url-pattern>/result.com</url-pattern>
+	</servlet-mapping>
+
+</web-app>

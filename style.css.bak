@@ -1,0 +1,56 @@
+body{margin:0px;padding:0px;background-color:ash;}
+#nav{margin-left:33%;
+padding-bottom:3%;}
+#nav ul li{
+float:left;
+list-style-type:none;
+padding:1% 3%;
+border:1px solid white;
+background-color:black;
+}
+#nav a{
+text-decoration:none;
+color:white;}
+#body1{
+display:flex;
+width:100%;
+height:80%;}
+#reg{
+padding-left:10%;
+padding-top:5%;
+background-color:#b015ed;
+width:50%;
+border-radius:30%;}
+#login{
+padding-left:10%;
+padding-top:5%;
+background-color:#ed0e85;
+width:50%;
+border-radius:30%;}
+#logintable{
+width:50%;}
+#logintable tr td{
+padding:5%;}
+#loginbutton{
+width:100%;
+height:100%;
+background-color:ash;}
+#regtable{
+width:50%;}
+#regtable tr td{
+padding:5%;}
+#regbutton{
+width:100%;
+height:100%;
+background-color:ash;
+color:black;
+}
+.next
+{
+background-color:green;
+color:white;
+width:90%;
+font-size:15px;
+border-radius:35%;
+padding:10px;
+}

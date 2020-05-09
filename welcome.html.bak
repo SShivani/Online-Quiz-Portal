@@ -1,0 +1,138 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+ <HEAD>
+  <TITLE> LOGIN </TITLE>
+  <META NAME="Keywords" CONTENT="quiz,c,c++,java">
+  <META NAME="Description" CONTENT="ExQuizMe">
+  <LINK rel="stylesheet" href="style.css">
+  <script>
+	function Validate() {
+	var name=document.getElementById("un");
+	if(un.value=="" || un.value==null)
+	{ alert("Enter Username");
+	  return false;
+	}
+    var phoneNo = document.getElementById("mobile1");
+    if (phoneNo.value == "" || phoneNo.value == null) {
+       alert("Please enter your Mobile No.");
+       return false;
+    }
+    if (phoneNo.value.length < 10 || phoneNo.value.length > 10) {
+      alert("Mobile No. is not valid, Please Enter 10 Digit Mobile No.");
+      return false;
+    }
+    var x=document.getElementById("mail123");  
+  
+    if (x.value == "" || x.value == null) {
+      alert("Please enter your Mail id....");
+      return false;
+    }
+    var filter = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+
+    if (!filter.test(x.value)) {
+    alert('Please provide a valid email address');
+	return false;
+	}
+	
+	var pwd=document.getElementById("pwd");
+	var cpwd=document.getElementById("cpwd");
+	
+	if(pwd.value=="" || pwd.value==null)
+	{alert("Enter password");
+	return false;
+	}
+	if(pwd.value.length < 6)
+	{alert("Password must be atleast 6 characters");
+	return false;
+	}
+	if(cpwd.value=="" || cpwd.value==null)
+	{alert("Enter confirm password");
+	return false;
+	}
+	if(pwd.value != cpwd.value)
+	{alert("Password and Confirm Password must be same");
+	return false;}	
+	
+    return true;
+  }
+  
+function Login(){
+    var name1=document.getElementById("name1");
+    if(name1.value=="" || name1.value==null)
+	{ alert("Enter Username");
+	  return false;
+	}
+    var pwd1=document.getElementById("pwd1");
+    if(pwd1.value=="" || pwd1.value==null)
+	{ alert("Enter password");
+	  return false;
+	}
+	return true;
+}
+
+  </script>
+ </HEAD>
+ <BODY>
+ <div><center><h1>Welcome to ExQuizMe..!!</h1> </center></div>
+
+ <div id="nav">
+ <ul>
+ <li><a href="#">Home</a></li>
+ <li><a href="#">About Us</a></li>
+ <li><a href="#">Contact Us</a></li>
+ <li><a href="#">Missions</a></li>
+ </ul></div>
+ <div id="body1">
+ 
+ <div id="reg">
+ <form action="register.com" method=post>
+ <h1>New User? Register Now..</h1>
+ <table id="regtable">
+ <tr>
+ <td>Username:</td>
+ <td><input type=text name="username" id="un"></td>
+ </tr>
+ <tr>
+ <td>Mobile Number:</td>
+ <td><input type=number name="mobilenumber" id="mobile1"></td>
+ </tr>
+ <tr>
+ <td>Mail id:</td>
+ <td><input type=mail name="mailid" id="mail123"></td>
+ </tr>
+ <tr>
+ <td>Password:</td>
+ <td><input type=password name="password" id="pwd"></td>
+ </tr>
+ <tr>
+ <td>Confirm Password:</td>
+ <td><input type=password name="confirmpassword" id="cpwd"></td>
+ </tr>
+ <tr >
+ <td col-span:2><input type=submit class="next" value=Register name="register" id="Registerbutton" onclick="return Validate();"></td>
+ </tr>
+ </table>
+ </form>
+ </div>
+ 
+  <div id="login">
+  <form action="instruct.com" method=post>
+ <h1>Already User? Login Now..</h1>
+ <table id="logintable">
+ <tr>
+ <td>Username:</td>
+ <td><input type=text name="NAME" id="name1"></td>
+ </tr>
+ <tr>
+ <td>Password:</td>
+ <td><input type=password name="password" id="pwd1"></td>
+ </tr>
+ <tr >
+ <td col-span:2><input type=submit class="next" value=Login name="login" id="loginbutton" onclick="return Login();"></td>
+ </tr>
+ </table>
+  </form>
+  </div>
+  </div>
+ </BODY>
+</HTML>
